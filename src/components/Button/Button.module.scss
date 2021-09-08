@@ -1,0 +1,15 @@
+@import "styles/variables";
+
+.btn {
+  color: $accent;
+  border: 1px solid $accent;
+  background-color: $black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: $dark-accent;
+  border-color: $dark-accent;
+}
