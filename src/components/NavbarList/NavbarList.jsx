@@ -7,7 +7,11 @@ export default function NavbarList() {
   return (
     <ul className={styles.list}>
       {routes.map((route) => {
-        return <NavbarListItem path={route.path}>{route.name}</NavbarListItem>;
+        return (
+          <NavbarListItem key={route.path} path={route.path}>
+            {route.name}
+          </NavbarListItem>
+        );
       })}
     </ul>
   );
