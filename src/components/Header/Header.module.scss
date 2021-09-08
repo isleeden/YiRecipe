@@ -1,0 +1,27 @@
+@import "styles/variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $dark-gray;
+}
+
+.authBtns {
+  display: flex;
+}
+
+.btn {
+  font-size: 1.18em;
+  cursor: pointer;
+  font-weight: 600;
+  color: $accent;
+}
+
+.btn:hover {
+  color: $dark-accent;
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
