@@ -1,13 +1,16 @@
 import React from "react";
-import Navbar from "components/NavbarList/NavbarList";
+import Header from "components/Header/Header";
+import styles from "styles/pages/Home.scss";
 
 export default function Home() {
   return (
-    <div>
-      <div className="container">
-        <Navbar />
-        <h1>Home Page</h1>
+    <>
+      <Header />
+      <div className="main">
+        <div className="container">
+          <h1 className="home__title">Home Page</h1>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
