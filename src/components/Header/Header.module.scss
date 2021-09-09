@@ -1,10 +1,13 @@
 @import "styles/variables";
 
 .header {
+  border-bottom: 1px solid $gray;
+}
+
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $dark-gray;
 }
 
 .authBtns {
@@ -12,6 +15,7 @@
 }
 
 .btn {
+  background-color: $white;
   font-size: 1.18em;
   cursor: pointer;
   font-weight: 600;
