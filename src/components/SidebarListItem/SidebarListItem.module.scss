@@ -1,0 +1,27 @@
+@import "styles/variables.scss";
+
+.card {
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.imgWrapper {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.title {
+  padding: 15px 20px;
+  font-size: 1.02em;
+  font-weight: 600;
+}
