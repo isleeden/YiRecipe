@@ -1,0 +1,24 @@
+@import "styles/variables.scss";
+
+.title {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 1.2em;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.author {
+  color: $gray;
+  font-size: 1.3em;
+  text-decoration: none;
+
+  span {
+    font-weight: 600;
+    color: $dark-gray-text;
+  }
+}
