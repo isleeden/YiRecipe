@@ -4,5 +4,9 @@ $dark-accent: #ffcb65;
 $white: #fff;
 $black: #000;
 $dark-gray: #272727;
+$dark-gray-text: rgba(
+  $color: $dark-gray,
+  $alpha: 0.75,
+);
 $gray: #aaa;
 $light-gray: #efefef;
