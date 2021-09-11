@@ -77,7 +77,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="home__main">
+      <main className="main home__main">
         <div className="container">
           <h1 className="home__title">Home Page</h1>
           <section className="last-added">

@@ -1,20 +1,8 @@
 @import "styles/variables.scss";
 
 .home__main {
-  padding: 50px 0;
-  background-color: $light-gray;
-
   .last-added {
     display: flex;
-  }
-
-  .main-content {
-    width: 78%;
-    padding: 0 20px;
-  }
-
-  .sidebar {
-    width: 22%;
   }
 }
 
