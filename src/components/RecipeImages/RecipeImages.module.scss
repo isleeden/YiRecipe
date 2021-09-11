@@ -1,0 +1,45 @@
+.recipeImages {
+  margin-top: 30px;
+  display: flex;
+}
+
+.imgList {
+  height: 600px;
+  overflow-y: hidden;
+}
+
+.imgWrapper {
+  border-radius: 10px;
+  position: relative;
+  margin-right: 15px;
+  height: 600px;
+  width: 600px;
+  overflow: hidden;
+  animation: appearImg 1s;
+
+  img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.secImgWrapper {
+  border-radius: 10px;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
