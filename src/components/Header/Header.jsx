@@ -1,7 +1,8 @@
 import React from "react";
 import NavbarList from "components/NavbarList/NavbarList";
-import Button from "components/Button/Button";
 import styles from "./Header.module.scss";
+import SignIn from "components/SignIn/SignIn";
+import SignUp from "components/SignUp/SignUp";
 
 export default function Header() {
   return (
@@ -9,8 +10,8 @@ export default function Header() {
       <div className={["container", styles.container].join(" ")}>
         <NavbarList></NavbarList>
         <div className={styles.authBtns}>
-          <Button className={styles.btn}>Sign in</Button>
-          <Button className={styles.btn}>Sign up</Button>
+          <SignIn></SignIn>
+          <SignUp></SignUp>
         </div>
       </div>
     </header>
