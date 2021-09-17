@@ -1,0 +1,16 @@
+@import "styles/variables";
+
+.input {
+  border: 1px solid $gray;
+  color: rgba($color: $dark-gray, $alpha: 0.68);
+  font-size: 0.9em;
+  border-radius: 6px;
+  padding: 8px 10px;
+  width: 300px;
+  outline: none;
+}
+
+.input:focus {
+  color: $black;
+  border-color: $dark-gray;
+}
