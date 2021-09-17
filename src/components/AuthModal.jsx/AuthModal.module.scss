@@ -1,0 +1,41 @@
+@import "styles/variables";
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  input:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.submitButton {
+  align-self: flex-end;
+}
+
+.authBtn {
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 600;
+  color: $accent;
+}
+
+.authBtn:hover {
+  color: $dark-accent;
+}
+
+.authBtn:not(:last-child) {
+  margin-right: 10px;
+}
