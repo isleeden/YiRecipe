@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./Modal.module.scss";
 
-export default function Modal({ isActive, children }) {
+const Modal = React.forwardRef(({ isActive, children }, ref) => {
   return (
     <div
+      ref={ref}
       className={
         isActive ? [styles.active, styles.modal].join(" ") : styles.modal
       }
@@ -11,4 +12,6 @@ export default function Modal({ isActive, children }) {
       {children}
     </div>
   );
-}
+});
+
+export default Modal;
