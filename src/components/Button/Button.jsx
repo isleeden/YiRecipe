@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "./Button.module.scss";
 
-export default function Button({ onClick, children, className }) {
+const Button = React.forwardRef(({ onClick, children, className }, ref) => {
   return (
-    <div className={[styles.btn, className].join(" ")} onClick={onClick}>
+    <button
+      ref={ref}
+      className={[styles.btn, className].join(" ")}
+      onClick={onClick}
+    >
       {children}
-    </div>
+    </button>
   );
-}
+});
+
+export default Button;

@@ -3,10 +3,11 @@
 .btn {
   color: $accent;
   border: 1px solid $accent;
-  background-color: $black;
+  background-color: transparent;
   padding: 10px 15px;
   border-radius: 10px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .btn:hover {
