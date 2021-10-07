@@ -21,6 +21,7 @@ export default function AuthModal({ onSubmit, title, submitText, children }) {
   useExternalClickListener(modalRef, authButton, closeModal);
 
   const closeModalOnSubmit = (e) => {
+    e.preventDefault();
     closeModal();
     onSubmit(e);
   };
