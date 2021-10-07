@@ -8,6 +8,7 @@ export const signIn = ({ email, password }) => {
       dispatch(setUser(response.data.user));
       localStorage.setItem("token", response.data.accessToken);
       dispatch(setAuth(true));
+      console.log(response.data);
     } catch (e) {
       alert(e.message);
     }
@@ -32,6 +33,17 @@ export const logout = () => {
       dispatch(setUser());
       localStorage.removeItem("token");
       dispatch(setAuth(false));
+    } catch {}
+  };
+};
+
+export const checkAuth = () => {
+  return async (dispatch) => {
+    try {
+      const response = await AuthService.checkAuth();
+      dispatch(setUser(response.data.user));
+      localStorage.setItem("token", response.data.accessToken);
+      dispatch(setAuth(true));
     } catch {}
   };
 };
