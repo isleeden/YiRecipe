@@ -1,4 +1,5 @@
-import api from "./index";
+import axios from "axios";
+import api, { API_URL } from "./index";
 
 export default class AuthService {
   static async signIn({ email, password }) {
@@ -11,5 +12,11 @@ export default class AuthService {
 
   static async logout() {
     return await api.post("/auth/logout");
+  }
+
+  static async checkAuth() {
+    return await axios.get(API_URL + "/auth/refresh", {
+      withCredentials: true,
+    });
   }
 }
