@@ -6,10 +6,11 @@ import { signIn } from "store/thunks/userThunks";
 
 export default function SignIn({ isActive, onClose }) {
   const dispatch = useDispatch();
-  const [userData, setUserData] = useState({ email: "", password: "" });
+  const initUserDataState = { email: "", password: "" };
+  const [userData, setUserData] = useState({ ...initUserDataState });
 
   const submitHandler = () => {
-    console.log(userData);
+    setUserData({ ...initUserDataState });
     dispatch(signIn(userData));
   };
 
