@@ -19,7 +19,7 @@ api.interceptors.response.use(
   },
   async (err) => {
     try {
-      if (err.response.status == 401 && err.config && !err.config.isRetry) {
+      if (err.response.status === 401 && err.config && !err.config.isRetry) {
         err.config.isRetry = true;
         const response = await AuthService.checkAuth();
         localStorage.setItem("token", response.data.accessToken);
