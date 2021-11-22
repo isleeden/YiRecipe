@@ -48,13 +48,8 @@ export default function Recipe() {
   const { id } = useParams();
 
   const fetchRecipe = async () => {
-    try {
-      const response = await RecipeService.getRecipe(id);
-      setRecipeState(response.data);
-      console.log(recipeState);
-    } catch (e) {
-      alert(e);
-    }
+    const response = await RecipeService.getRecipe(id);
+    setRecipeState(response.data);
   };
 
   useEffect(() => {
