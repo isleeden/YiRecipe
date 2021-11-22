@@ -3,7 +3,7 @@ import Recipe from "pages/Recipe";
 
 const routes = [
   { path: "/", component: Home, exact: true, name: "Home" },
-  { path: "/recipe", component: Recipe, exact: true, name: "Recipe" },
+  { path: "/recipes/:id", component: Recipe, exact: true, name: "Recipe" },
 ];
 
 export default routes;

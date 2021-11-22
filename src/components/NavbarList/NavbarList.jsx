@@ -6,13 +6,7 @@ import NavbarListItem from "components/NavbarListItem/NavbarListItem";
 export default function NavbarList() {
   return (
     <ul className={styles.list}>
-      {routes.map((route) => {
-        return (
-          <NavbarListItem key={route.path} path={route.path}>
-            {route.name}
-          </NavbarListItem>
-        );
-      })}
+      <NavbarListItem path="/">YiRecipe</NavbarListItem>
     </ul>
   );
 }
