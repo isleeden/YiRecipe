@@ -23,6 +23,8 @@
 .title {
   font-size: 1.2em;
   font-weight: 600;
+  text-decoration: none;
+  color: $dark-gray;
 }
 
 .body {
@@ -33,6 +35,7 @@
 .author {
   font-size: 1.2em;
   text-decoration: none;
+  color: $dark-gray-text;
 
   span {
     font-weight: 600;
