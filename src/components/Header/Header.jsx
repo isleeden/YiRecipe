@@ -5,6 +5,7 @@ import SignIn from "components/SignIn/SignIn";
 import SignUp from "components/SignUp/SignUp";
 import { useSelector } from "react-redux";
 import LogoutButton from "components/LogoutButton/LogoutButton";
+import NewRecipeButton from "components/NewRecipeButton/NewRecipeButton";
 
 export default function Header() {
   const isAuth = useSelector((state) => state.user.isAuth);
@@ -15,7 +16,10 @@ export default function Header() {
         <NavbarList></NavbarList>
         <div className={styles.authBtns}>
           {isAuth ? (
-            <LogoutButton />
+            <>
+              <NewRecipeButton to="/recipes/create" />
+              <LogoutButton />
+            </>
           ) : (
             <>
               <SignIn></SignIn>
