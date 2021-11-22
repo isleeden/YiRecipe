@@ -1,0 +1,23 @@
+@import "styles/variables";
+
+.list {
+  margin-top: 30px;
+  display: flex;
+}
+
+.listItem {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid rgba($dark-gray, 0.2);
+  background-color: $white;
+  border-radius: 20%;
+  transition: 0.8s;
+}
+
+.listItem:not(:last-child) {
+  margin-right: 2px;
+}
+
+.active {
+  background-color: $secondary;
+}
