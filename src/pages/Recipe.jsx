@@ -8,6 +8,7 @@ import Ingredients from "components/Ingredients/Ingredients";
 import Directions from "components/Directions/Directions";
 import RecipeImages from "components/RecipeImages/RecipeImages";
 import "styles/pages/Recipe.scss";
+import Layout from "layouts/Layout";
 
 export default function Recipe() {
   const imgs = [
@@ -57,8 +58,7 @@ export default function Recipe() {
   }, []);
 
   return (
-    <>
-      <Header />
+    <Layout>
       <main className="recipe__main main">
         <div className="container">
           <div className="main-content">
@@ -79,6 +79,6 @@ export default function Recipe() {
           </aside>
         </div>
       </main>
-    </>
+    </Layout>
   );
 }

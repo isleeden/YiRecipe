@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Header from "components/Header/Header";
 import "styles/pages/Home.scss";
 import RecipeList from "components/RecipeList/RecipeList";
 import SidebarList from "components/SidebarList/SidebarList";
 import RecipeService from "api/RecipeService";
 import PagesList from "components/PagesList/PagesList";
 import { createPages } from "utils/createPages";
+import Layout from "layouts/Layout";
 
 export default function Home() {
   const recipesSidebar = [
@@ -58,8 +58,7 @@ export default function Home() {
   };
 
   return (
-    <>
-      <Header />
+    <Layout>
       <main className="main home__main">
         <div className="container">
           <h1 className="home__title">Home Page</h1>
@@ -83,6 +82,6 @@ export default function Home() {
           </section>
         </div>
       </main>
-    </>
+    </Layout>
   );
 }
