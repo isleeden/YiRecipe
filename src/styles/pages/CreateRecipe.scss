@@ -1,0 +1,71 @@
+@import "styles/variables";
+
+.create-recipe__form {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 42%;
+  margin: auto;
+
+  form {
+    width: 100%;
+  }
+
+  form:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    span {
+      width: 100%;
+      font-weight: 600;
+      font-size: 1.4em;
+      margin: 0 auto 14px;
+    }
+
+    input {
+      font-size: 1.1em;
+      width: 100%;
+      margin: auto;
+      padding: 10px 12px;
+    }
+
+    input:focus {
+      border: 1px solid $accent;
+      color: $dark-gray;
+    }
+  }
+
+  .many-values {
+    input {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin: 0px 5px 10px;
+      border-radius: 10px;
+
+      li {
+        padding: 10px;
+        font-size: 1.1em;
+        border-bottom: 1px solid $gray;
+      }
+    }
+  }
+
+  .btn-submit {
+    color: $white;
+    font-weight: 600;
+    background-color: $accent;
+    font-size: 1.1em;
+  }
+
+  label:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
