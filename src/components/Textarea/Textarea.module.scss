@@ -1,0 +1,17 @@
+@import "styles/variables";
+
+.textarea {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  resize: none;
+  border: 1px solid rgba($color: $dark-gray, $alpha: 0.4);
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba($color: $dark-gray, $alpha: 0.7);
+}
+
+.textarea:focus {
+  border: 1px solid $accent;
+  color: $black;
+}
