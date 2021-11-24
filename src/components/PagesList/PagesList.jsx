@@ -10,7 +10,7 @@ export default function PagesList({ pages, onPageClick, currentPage }) {
             key={item}
             onClick={onPageClick(item)}
             className={`${styles.listItem} ${
-              currentPage == item ? styles.active : ""
+              currentPage === item ? styles.active : ""
             }`}
           >
             {item}
