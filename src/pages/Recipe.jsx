@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import RecipeService from "api/RecipeService";
-import Header from "components/Header/Header";
 import RecipeAbout from "components/RecipeAbout/RecipeAbout";
 import SidebarList from "components/SidebarList/SidebarList";
 import Ingredients from "components/Ingredients/Ingredients";
