@@ -6,15 +6,19 @@ export default function Input({
   onChange,
   value,
   type,
+  name,
   placeholder,
+  onBlur,
 }) {
   return (
     <input
       className={[styles.input, className].join(" ")}
       type={type}
+      name={name}
       placeholder={placeholder}
       onChange={onChange}
       value={value}
+      onBlur={onBlur}
     />
   );
 }
