@@ -1,11 +1,11 @@
 @import "styles/variables";
 
 .create-recipe__form {
-  padding-top: 40px;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 42%;
+  width: 47%;
   margin: auto;
 
   form {
@@ -24,12 +24,26 @@
     span {
       width: 100%;
       font-weight: 600;
-      font-size: 1.4em;
+      font-size: 1.6em;
       margin: 0 auto 14px;
     }
 
-    input {
+    p {
       font-size: 1.1em;
+      transition: 0.5s;
+      opacity: 0;
+      visibility: hidden;
+      color: $red;
+    }
+
+    p.active {
+      opacity: 1;
+      visibility: visible;
+      margin-bottom: 10px;
+    }
+
+    input {
+      font-size: 1.2em;
       width: 100%;
       margin: auto;
       padding: 10px 12px;
@@ -41,31 +55,48 @@
     }
   }
 
-  .many-values {
-    input {
-      margin-bottom: 10px;
-    }
+  label:not(:last-child) {
+    margin-bottom: 15px;
+  }
 
+  .many-values {
     ul {
       margin: 0px 5px 10px;
       border-radius: 10px;
 
       li {
-        padding: 10px;
-        font-size: 1.1em;
+        padding: 12px 10px;
+        font-size: 1.2em;
         border-bottom: 1px solid $gray;
+      }
+    }
+
+    label {
+      margin-bottom: 0;
+    }
+
+    div {
+      p {
+        font-size: 1.1em;
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        color: $red;
+      }
+
+      p.active {
+        opacity: 1;
+        visibility: visible;
+        margin-bottom: 10px;
       }
     }
   }
 
   .btn-submit {
+    margin-top: 20px;
     color: $white;
     font-weight: 600;
     background-color: $accent;
     font-size: 1.1em;
-  }
-
-  label:not(:last-child) {
-    margin-bottom: 15px;
   }
 }
