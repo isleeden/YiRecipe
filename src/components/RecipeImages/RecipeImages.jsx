@@ -12,7 +12,7 @@ export default function RecipeImages({ imgs }) {
       <div className={styles.imgList}>
         {imgs.map((img, index) => {
           return (
-            <div className={styles.secImgWrapper}>
+            <div key={`${item}${index}`} className={styles.secImgWrapper}>
               <img
                 onClick={() => {
                   setCurrentImg(index);

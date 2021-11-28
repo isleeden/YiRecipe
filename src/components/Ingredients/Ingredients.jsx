@@ -6,9 +6,9 @@ export default function Ingredients({ ingredients }) {
     <div>
       <h2 className={styles.title}>Ingredients</h2>
       <ul className={styles.list}>
-        {ingredients.map((item) => {
+        {ingredients.map((item, index) => {
           return (
-            <li>
+            <li key={`${item}${index}`}>
               <p>{item}</p>
             </li>
           );

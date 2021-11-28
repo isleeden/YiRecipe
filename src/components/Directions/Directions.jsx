@@ -8,7 +8,7 @@ export default function Directions({ directions }) {
       <ol className={styles.list}>
         {directions.map((item, index) => {
           return (
-            <li>
+            <li key={`${item}${index}`}>
               <p className={styles.step}>Step {index + 1}.</p>
               <p className={styles.listText}>{item}</p>
             </li>
