@@ -92,6 +92,26 @@
     }
   }
 
+  .many-tags {
+    ul {
+      margin: 0px 5px 10px;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        padding: 12px 10px;
+        font-size: 1.2em;
+        border: 1px solid $gray;
+        border-radius: 10px;
+        margin-bottom: 5px;
+      }
+
+      li:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+  }
+
   .btn-submit {
     margin-top: 20px;
     color: $white;
